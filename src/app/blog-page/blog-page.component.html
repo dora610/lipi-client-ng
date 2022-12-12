@@ -1,1 +1,7 @@
-<p>blog-page works!</p>
+<h3 class="text-xl font-bold">Suggested reads</h3>
+<!-- ul>(li>.blog-card>(.card-heading>h2{Blog $})+(.card-body>p>lorem))*10 -->
+<ul>
+  <li *ngFor="let blog of blogs">
+    <app-blog-card [blogDtls]="blog"></app-blog-card>
+  </li>
+</ul>

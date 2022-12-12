@@ -8,6 +8,7 @@ import { BlogPageComponent } from './blog-page/blog-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarLeftComponent } from './sidebar-left/sidebar-left.component';
+import { BlogCardComponent } from './blog-page/blog-card/blog-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SidebarLeftComponent } from './sidebar-left/sidebar-left.component';
     BlogPageComponent,
     NavbarComponent,
     FooterComponent,
-    SidebarLeftComponent
+    SidebarLeftComponent,
+    BlogCardComponent
   ],
   imports: [
     BrowserModule,

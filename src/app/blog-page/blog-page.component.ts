@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BlogPreview } from '../Interfaces/BlogPreview';
+import { blogPreviewsMock } from '../mocks/BlogDash';
 
 @Component({
   selector: 'app-blog-page',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogPageComponent implements OnInit {
 
-  constructor() { }
+  blogs: BlogPreview[]
+  constructor() { 
+    this.blogs = blogPreviewsMock
+  }
 
   ngOnInit(): void {
   }

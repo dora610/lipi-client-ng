@@ -20,4 +20,13 @@ describe('NavbarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have navbar elements in order',()=>{
+    const expectedNavEle = ['Home', 'Trending', 'Following', 'Your Feed', 'Login', 'SignUp']
+    const navbarEle : HTMLElement = fixture.nativeElement;
+    const navElements = navbarEle.querySelectorAll('li>a')
+    Array.from(navElements).forEach((ele, index) => {
+      expect(ele.textContent).toEqual(expectedNavEle[index])
+    })
+  })
 });
